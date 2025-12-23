@@ -1,0 +1,231 @@
+==============================
+WHAT IS GIT?
+==============================
+
+Git is a version control system.
+In simple words, Git helps us to track changes in our code.
+
+Whenever we change a file, Git remembers:
+- what was changed
+- who changed it
+- when it was changed
+
+So if something goes wrong, we can go back to the old version.
+
+Git works on our local machine (PC / laptop).
+It does not need internet to work.
+
+Git is a software (tool) that we install on our system.
+
+
+==============================
+WHAT IS GITHUB?
+==============================
+
+GitHub is a cloud platform / website.
+It is used to store Git repositories online.
+
+In simple words:
+Git = works locally
+GitHub = stores code online
+
+GitHub helps us to:
+- backup code
+- share code with other developers
+- work together in a team
+
+Without Git, GitHub cannot work.
+First we use Git, then we connect it to GitHub.
+
+
+==============================
+WHAT IS VERSION CONTROL SYSTEM?
+==============================
+
+Version control system means:
+keeping track of different versions of files.
+
+Instead of saving:
+project_final
+project_final_v2
+project_final_latest
+
+Git manages versions automatically.
+
+
+==============================
+TYPES OF VERSION CONTROL SYSTEMS
+==============================
+
+1) Local Version Control System (LVCS)
+
+In this:
+- files are stored only on local machine
+- no collaboration with other developers
+- example: manual backups
+
+Problem:
+If system crashes, code is lost.
+
+
+2) Centralized Version Control System (CVCS)
+
+In this:
+- one central server stores code
+- developers connect to that server
+- example: SVN
+
+Problem:
+If server goes down, no one can work.
+
+
+3) Distributed Version Control System (DVCS)
+
+In this:
+- every developer has full copy of code
+- can work offline
+- example: Git
+
+This is the best system.
+That’s why we use Git.
+
+
+==============================
+GIT BASIC CONCEPTS
+==============================
+
+Working Directory:
+Where we create or modify files.
+
+Staging Area:
+Where files are kept before commit.
+
+Repository:
+Where files are permanently saved by Git.
+
+
+==============================
+WHAT IS A REPOSITORY?
+==============================
+
+Repository means:
+a folder which Git tracks.
+
+It contains a hidden folder called .git
+That .git folder stores all history.
+
+
+==============================
+WHAT IS A COMMIT?
+==============================
+
+Commit means:
+saving changes permanently in Git.
+
+Each commit has:
+- unique id
+- message
+- snapshot of files
+
+
+==============================
+WHAT IS A BRANCH?
+==============================
+
+Branch means:
+separate line of development.
+
+Main branch is usually called master or main.
+
+We use branches to:
+- work on new features
+- fix bugs
+without affecting main code
+
+
+==============================
+WHY WE USE GIT & GITHUB
+==============================
+
+We use Git to:
+- track changes
+- manage versions
+- work safely
+
+We use GitHub to:
+- store code online
+- collaborate with team
+- share projects
+
+
+==============================
+GIT COMMANDS (AFTER THEORY)
+==============================
+
+ls
+→ shows files and folders
+
+ls -a
+→ shows hidden files like .git
+
+mkdir folder_name
+→ creates a folder
+
+touch file_name
+→ creates file (Git Bash)
+
+New-Item file_name
+→ creates file (PowerShell)
+
+
+git init
+→ initializes Git repository in existing folder
+
+git status
+→ checks status of files
+
+git add file_name
+→ adds specific file to staging area
+
+git add .
+→ adds all files to staging area
+
+git commit -m "message"
+→ saves changes permanently
+
+git log
+→ shows commit history
+
+
+git branch
+→ shows all branches
+
+git branch branch_name
+→ creates new branch
+
+git checkout branch_name
+→ switches branch
+
+
+git remote add origin URL
+→ connects local repo to GitHub
+
+git push origin master
+→ uploads code to GitHub
+
+git pull origin master
+→ downloads code from GitHub
+
+
+==============================
+INTERVIEW SUMMARY (IN MY WORDS)
+==============================
+
+Git is a distributed version control system
+used to track changes in code locally.
+
+GitHub is a cloud platform
+used to host Git repositories online.
+
+First we use Git on local machine,
+then we push code to GitHub for sharing and collaboration.
