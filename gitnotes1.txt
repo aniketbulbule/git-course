@@ -327,6 +327,55 @@ git commit -a
 → stages ONLY modified or deleted files
 → works only for tracked files
 
+----------------------------------------------------
+git rm
+----------------------------------------------------
+Command:
+git rm file_name
+
+Use:
+- Removes file from Git
+- Removes file from local system
+- File deleted everywhere after commit
+
+
+----------------------------------------------------
+git rm --cached
+----------------------------------------------------
+Command:
+git rm --cached file_name
+
+Use:
+- Removes file from Git tracking only
+- File stays on my PC
+- Used when file added by mistake
+
+
+----------------------------------------------------
+WHAT IS REMOTE?
+----------------------------------------------------
+Remote is a connection
+between local Git and GitHub.
+
+Used for:
+- collaboration
+- pushing code
+- pulling code
+- working with team
+
+
+----------------------------------------------------
+Remote Commands
+----------------------------------------------------
+Check remote:
+git remote -v
+
+Add remote:
+git remote add origin URL
+
+Remove remote:
+git remote remove origin
+
 
 =====================================
 WORKFLOW SUMMARY (IN MY WORDS)
@@ -365,6 +414,15 @@ used to host Git repositories online.
 
 First we use Git on local machine,
 then we push code to GitHub for sharing and collaboration.
+
+
+----------------------------------------
+GitHub, GitLab, and Bitbucket 
+----------------------------------
+are cloud platforms
+used to host and share Git repositories.
+They help developers collaborate, manage code,
+and track changes using Git.
 
 
 
