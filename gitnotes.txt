@@ -217,6 +217,142 @@ git pull origin master
 → downloads code from GitHub
 
 
+=====================================
+WHAT IS HEAD IN GIT? (IN MY WORDS)
+=====================================
+
+HEAD is a pointer in Git.
+It tells Git where I am currently working.
+
+HEAD always points to:
+- the current branch
+- and its latest commit
+
+
+Example output:
+
+commit 6c6d56e6f77866063269ee12515a11c6bf2d14dc (HEAD -> master)
+
+
+Meaning:
+
+master
+→ is the branch name
+
+HEAD -> master
+→ HEAD is pointing to the master branch
+
+master -> latest commit
+→ master branch is pointing to the most recent commit
+
+
+So the flow is:
+
+HEAD → master → latest commit
+
+
+=====================================
+WHAT IS git add?
+=====================================
+
+git add is used to move files
+from Working Directory to Staging Area.
+
+It does NOT save changes permanently.
+It only prepares files for commit.
+
+
+Command:
+
+git add file_name
+→ adds only that specific file to staging area
+
+git add .
+→ adds ALL modified and new files to staging area
+
+Note:
+"." means current directory (all files inside it)
+
+
+=====================================
+WHAT IS git commit?
+=====================================
+
+git commit saves staged files permanently
+into the Git repository.
+
+After commit, Git creates a snapshot
+of the project at that point.
+
+
+Command:
+
+git commit -m "message"
+→ commits only staged files
+
+
+=====================================
+WHAT IS git commit -a -m ?
+=====================================
+
+Command:
+
+git commit -a -m "commit message"
+
+
+Meaning (VERY IMPORTANT):
+
+- Automatically stages
+  ONLY already tracked files
+- Then commits them in one step
+
+
+So this command:
+✔ stages modified tracked files
+✔ commits them together
+
+But:
+❌ it does NOT add new (untracked) files
+
+
+=====================================
+DIFFERENCE BETWEEN git add . AND git commit -a
+=====================================
+
+git add .
+→ stages ALL files
+   (new + modified + deleted)
+
+git commit -a
+→ stages ONLY modified or deleted files
+→ works only for tracked files
+
+
+=====================================
+WORKFLOW SUMMARY (IN MY WORDS)
+=====================================
+
+1) I modify files → Working Directory
+2) I run git add → Staging Area
+3) I run git commit → Repository
+
+OR
+
+If files are already tracked:
+I directly use git commit -a -m
+
+
+=====================================
+INTERVIEW ONE-LINE ANSWERS
+=====================================
+
+HEAD is a pointer that points to the current branch and its latest commit.
+
+git add moves files to staging area.
+
+git commit -a -m stages and commits modified tracked files in one command.
+
+
 ==============================
 INTERVIEW SUMMARY (IN MY WORDS)
 ==============================
@@ -229,3 +365,6 @@ used to host Git repositories online.
 
 First we use Git on local machine,
 then we push code to GitHub for sharing and collaboration.
+
+
+
