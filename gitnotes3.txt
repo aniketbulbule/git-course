@@ -1,0 +1,202 @@
+========================================================
+GIT NOTES – ALL IN ONE FILE (IN SIMPLE WORDS)
+========================================================
+
+1️⃣ CREATE FILE
+--------------
+Command:
+echo "# git-course" >> README.md
+
+Meaning:
+Creates README.md (if not exists) and adds heading "# git-course".
+>> appends text without removing old content.
+
+--------------------------------------------------------
+
+2️⃣ INITIALIZE GIT
+-----------------
+Command:
+git init
+
+Meaning:
+Starts Git in the current folder.
+Creates hidden .git folder and starts tracking changes.
+
+--------------------------------------------------------
+
+3️⃣ ADD FILES TO STAGE
+---------------------
+Command:
+git add README.md
+
+Meaning:
+Prepares file to be saved (staged).
+Tells Git: "This file is ready to commit."
+
+--------------------------------------------------------
+
+4️⃣ COMMIT CHANGES
+-----------------
+Command:
+git commit -m "first commit"
+
+Meaning:
+Saves the staged files permanently in Git history.
+-m "message" → description of changes.
+
+--------------------------------------------------------
+
+5️⃣ BRANCHES
+------------
+Command to create branch:
+git branch feature-login
+
+Command to switch branch:
+git checkout feature-login
+
+Meaning:
+Branch is a separate workspace to work on features without affecting main code.
+Safe place to experiment.
+
+Merge back to main:
+git checkout main
+git merge feature-login
+
+--------------------------------------------------------
+
+6️⃣ MAIN BRANCH
+---------------
+Meaning:
+Default branch in modern Git.
+Holds stable/final code.
+Command to rename current branch to main:
+git branch -M main
+
+--------------------------------------------------------
+
+7️⃣ MASTER BRANCH
+----------------
+Meaning:
+Old default branch name.
+Same as main, but outdated.
+Not recommended now.
+
+--------------------------------------------------------
+
+8️⃣ REMOTE REPOSITORY
+-------------------
+Meaning:
+Remote is the online copy of your project (GitHub, GitLab, Bitbucket).
+Used to push, fetch, and share code.
+
+Command to add remote:
+git remote add origin <repo-url>
+
+Check remote URL:
+git remote -v
+
+--------------------------------------------------------
+
+9️⃣ ORIGIN
+----------
+Meaning:
+Origin is the nickname for remote repository.
+Default name used in GitHub workflows.
+Used when pushing or pulling code.
+
+Example:
+git push origin main
+
+--------------------------------------------------------
+
+🔟 PUSH TO GITHUB
+----------------
+Command:
+git push -u origin main
+
+Meaning:
+Uploads local commits to GitHub.
+-u → sets default upstream for future pushes.
+
+--------------------------------------------------------
+
+1️⃣1️⃣ POWER SHELL – ADD TEXT TO FILE
+-----------------------------------
+Command 1:
+Add-Content gitnotes2.txt "This is my git note"
+
+Command 2:
+echo "Git notes" >> gitnotes2.txt
+
+Meaning:
+Adds text to file without deleting old content.
+
+Open file manually:
+notepad gitnotes2.txt
+
+--------------------------------------------------------
+
+1️⃣2️⃣ CHECK CURRENT LOCATION
+----------------------------
+Command:
+pwd
+
+Meaning:
+Prints current working directory (folder where you are working).
+
+--------------------------------------------------------
+
+1️⃣3️⃣ LIST FILES
+----------------
+Windows CMD:
+dir
+
+Linux / Git Bash:
+ls
+
+Meaning:
+Shows files and folders in current directory.
+
+--------------------------------------------------------
+
+1️⃣4️⃣ VIEW FILE CONTENT
+----------------------
+Linux / Git Bash:
+cat README.md
+
+Windows CMD:
+type README.md
+
+Meaning:
+Displays content of a file in terminal.
+
+--------------------------------------------------------
+
+FLOW OF GIT COMMANDS (FIRST TIME SETUP)
+---------------------------------------
+1. echo "# git-course" >> README.md → create file
+2. git init → initialize repository
+3. git add README.md → stage file
+4. git commit -m "first commit" → commit changes
+5. git branch -M main → rename branch
+6. git remote add origin <repo-url> → connect GitHub
+7. git push -u origin main → push code online
+
+--------------------------------------------------------
+
+ONE-LINE INTERVIEW READY SUMMARY
+--------------------------------
+- Branch → separate workspace
+- Main → default branch
+- Master → old default branch
+- Remote → online repository
+- Origin → nickname for remote
+- git add → stage files
+- git commit → save snapshot
+- git push → upload code to GitHub
+- git remote -v → show remote URLs
+- pwd → current folder
+- dir / ls → list files
+- cat → view file content
+
+========================================================
