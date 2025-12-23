@@ -343,7 +343,7 @@ I directly use git commit -a -m
 
 
 =====================================
-INTERVIEW ONE-LINE ANSWERS
+INTERVIEW ONE-LINE ANSWERS 
 =====================================
 
 HEAD is a pointer that points to the current branch and its latest commit.
